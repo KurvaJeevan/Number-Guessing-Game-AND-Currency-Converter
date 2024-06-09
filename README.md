@@ -1,4 +1,4 @@
 # Innovate_2024
-Internship task 
+Internship tasks 
 1) Number Guessing Game
 2) Currency Converter
