@@ -30,23 +30,6 @@ def Medium():
     txt1.set("Find the number which is between 1-200")
     rl=Label(a,textvariable=txt1,font=font2).grid(row=6,column=0, columnspan=2, pady=10)
     enterb2=Button(a,text="Enter",command=lambda:[Easyf(k),clear()], font=font3).grid(row=5,column=0, columnspan=2, pady=10)
-
-def Mediumf(k):   
-    b=int(e.get())
-    
-    if b==k:
-        txt2.set("      Congratulation! Your guess is right      ")
-        r2=Label(a,textvariable=txt2,font=font2).grid(row=6,column=0, columnspan=2, pady=10)
-        exit
-
-    elif b<k:
-        txt2.set("The number guessed is lower than the original number     ")
-        r2=Label(a,textvariable=txt2,font=font2).grid(row=6,column=0, columnspan=2, pady=10)            
-       
-    else:
-        txt2.set("The number guessed is higher than the original number")
-        r2=Label(a,textvariable=txt2,font=font2).grid(row=6,column=0, columnspan=2, pady=10)           
-        
     
 def Hard():
 
@@ -54,20 +37,6 @@ def Hard():
     txt1.set("Find the number which is between 1-300")
     rl=Label(a,textvariable=txt1,font=font2).grid(row=6,column=0, columnspan=2, pady=10)
     enterb3=Button(a,text="Enter",command=lambda:[Easyf(k),clear()], font=font3).grid(row=5,column=0, columnspan=2, pady=10)
-
-def Hardf(k):
-    b=int(e.get())
-    if b==k:
-        txt2.set("       Congratulation! Your guess is right         ")
-        r2=Label(a,textvariable=txt2,font=font2).grid(row=6,column=0, columnspan=2, pady=10)
-            
-    elif b<k:
-        txt2.set("The number guessed is lower than the original number")
-        r2=Label(a,textvariable=txt2,font=font2).grid(row=6,column=0, columnspan=2, pady=10)            
-
-    else:
-        txt2.set("The number guessed is higher than the original number")
-        r2=Label(a,textvariable=txt2,font=font2).grid(row=6,column=0, columnspan=2, pady=10)
             
 def start():
     c=compm.get()
